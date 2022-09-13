@@ -12,7 +12,7 @@ const Sith = () => {
       'ArrowLeft': ['left', -15],
     }
     
-    addEventListener('keydown', function(e) {
+    addEventListener('keydown', (e) => {
       let key = obj[e.key];
       if( key ){ // key[0] == 'top' или 'left'
         pos[ key[0] ] = pos[ key[0] ] + key[1];
