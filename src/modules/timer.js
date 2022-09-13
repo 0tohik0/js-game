@@ -1,17 +1,33 @@
 const timer = () => {
-    const timerHours = document.getElementById('timer-hours')
-    const timerMinutes = document.getElementById('timer-minutes')
-    const timerSecond = document.getElementById('timer-second')
+    
+    function startTimer(duration, display) {
+        let timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+    
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+            display.textContent = minutes + ":" + seconds;
+    
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+    
+    window.onload = () => {
+        let fiveMinutes = 60 * 1,
+            display = document.querySelector('#time');
+        startTimer(fiveMinutes, display);
+    }
 
-    console.log(timerHours);
-    console.log(timerMinutes);
-    console.log(timerSecond);
 }
 
 export default  timer
 
 
 
-// timer-hours
 // timer-minutes
 // timer-second

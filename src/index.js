@@ -1,5 +1,5 @@
 import timer from './modules/timer'
-import Sith from './modules/Sith'
+import sith from './modules/sith'
 
 timer()
-Sith()
+sith()

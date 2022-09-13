@@ -1,4 +1,4 @@
-const Sith = () => {
+const sith = () => {
 
     let anakin = document.getElementById('an');
     let pos = {top: 100, left: 100}
@@ -22,4 +22,4 @@ const Sith = () => {
     
 }
 
-export default Sith
+export default sith
