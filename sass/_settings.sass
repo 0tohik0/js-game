@@ -1,0 +1,50 @@
+*,*:before, *:after
+    box-sizing: border-box
+    margin: 0
+html
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    color: $white
+h1,h2,h3
+    margin: 0
+a
+    color: $white
+    text-decoration: none
+    cursor: pointer
+    &:hover
+        color: $lilac
+        transition-duration: 400ms
+.container
+    margin: auto
+    max-width: 81.3125rem
+.block
+    display: flex
+    justify-content: space-between
+    align-items: center
+.title
+    font-weight: 700
+    font-size: 3rem
+    line-height: 140%
+.text   
+    font-weight: 400
+    opacity: 0.4
+.button
+    padding: 0.625rem 1.875rem
+    border-radius: 3.125rem
+    color: $white
+    border: none
+    cursor: pointer
+    &--primary
+        background: linear-gradient(94.26deg, $lilac 9.51%, $violet 90.23%)
+        &:hover
+            background: linear-gradient(94.26deg,$violet 9.51%, $lilac 90.23%)
+    &--secondary
+        background: linear-gradient(94.78deg, $red 11.19%, $purple 93.72%)
+        &:hover
+            background: linear-gradient(94.78deg, $purple 11.19%, $red 93.72%)
+
+            
+
+
