@@ -1,3 +1,22 @@
-body {
-    background: rgb(106, 101, 148);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.anakin {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.anakinCl {
+    position: absolute;
+    top: 100px;
+    left: 100px; 
+    width: 216px;
+    height: 300px;
+    background-image: url(../img/an.png);
 }
