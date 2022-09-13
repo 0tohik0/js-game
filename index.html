@@ -1,61 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shippori+Antique&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Computer assembly</title>
+    <script src="./dist/main.js" defer></script>
+    <title>js-game</title>
 </head>
 <body>
 
-<header class="header">
-    <div class="header-container block">
-        <a class="header-logo">
-            <img src="./img/logo.png" alt="логотип" class="header-logo__img" width="40px" height="40px">
-        </a>
-        <nav class="nav header-menu">
-            <a href="#" class="header-menu__item">Главная</a>
-            <a href="#" class="header-menu__item">Курсы</a>
-            <a href="#" class="header-menu__item">Расписание</a>
-            <a href="#" class="header-menu__item">Преподаватели</a>
-            <a href="#" class="header-menu__item">Рассылки</a>
-            <a href="#" class="header-menu__item">Контакты</a>
-        </nav>
-        <button class="header-button button button--primary">Зайти в кабинет</button>
-    </div>
-</header>
-<!-- /.header -->
-<section class="promo">
-    <div class="container">
-        <h1 class="title promo-title">Первый курс <br>по компьютерной сборке</h1>
-        <div class="promo-block block">
-            <div class="promo-timer">
-                <p class="promo-timer__number">18</p>
-                <p class="promo-timer__text text">Дней</p>
-            </div>
-            <div class="promo-timer">
-                <p class="promo-timer__number">18</p>
-                <p class="promo-timer__text text">Часов</p>
-            </div>
-            <div class="promo-timer">
-                <p class="promo-timer__number">18</p>
-                <p class="promo-timer__text text number">Минут</p>
-            </div>
-            <div class="promo-timer">
-                <p class="promo-timer__number">18</p>
-                <p class="promo-timer__text text number">Секунд</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /.promo -->
-
-
-
+    <header class="header">
+        <div class="timer"><span id="time">01:00</span></div>
+        <div class="yoda"></div>
+        <div class="count">Ты получил: <span id="count">0</span> очков</div>
+    </header>
     
+    <div class="anakin">
+        <div id="an" class="anakinCl"></div>
+    </div>
+
 </body>
 </html>
