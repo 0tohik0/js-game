@@ -18,13 +18,6 @@ html {
     align-items: center;
 }
 
-.section {
-    position: relative;
-}
-.container {
-    position: relative;
-}
-
 .anakin {
     position: relative;
     margin-top: 20px;

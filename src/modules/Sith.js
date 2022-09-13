@@ -2,8 +2,19 @@ const sith = () => {
 
     let anakin = document.getElementById('an');
     let pos = {top: 100, left: 100}
+    const escapeScreen = document.querySelector('.escape-screen')
+
     anakin.style.top = pos.top + 'px';
     anakin.style.left = pos.left + 'px';
+
+    const pause = () => {
+      if (escapeCount == 0) {
+          escapeScreen.style.display="block" 
+
+      } else {
+          escapeScreen.style.display="none"
+      }
+    }
     
     let obj = {
       'ArrowDown': ['top', 15], 
