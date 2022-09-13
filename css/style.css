@@ -11,6 +11,20 @@ html {
     background: url(../img/KOSMOS.jpg) no-repeat center / cover
 }
 
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    position: relative;
+}
+.container {
+    position: relative;
+}
+
 .anakin {
     position: relative;
     margin-top: 20px;
@@ -30,7 +44,13 @@ html {
 
 .timer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     color: aliceblue;
     font-size: 50px;
+}
+
+.yoda {
+    width: 180px;
+    height: 85px;
+    background-image: url(../img/yoda.png);
 }
