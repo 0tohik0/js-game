@@ -22,12 +22,9 @@ const timer = () => {
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
     }
-
 }
 
 export default  timer
 
 
 
-// timer-minutes
-// timer-second

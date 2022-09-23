@@ -1,20 +1,11 @@
 const sith = () => {
-
-    let anakin = document.getElementById('an');
-    let pos = {top: 100, left: 100}
     const escapeScreen = document.querySelector('.escape-screen')
 
-    anakin.style.top = pos.top + 'px';
-    anakin.style.left = pos.left + 'px';
+    let anakin = document.getElementById('an')
+    let pos = {top: 100, left: 100}
 
-    const pause = () => {
-      if (escapeCount == 0) {
-          escapeScreen.style.display="block" 
-
-      } else {
-          escapeScreen.style.display="none"
-      }
-    }
+    anakin.style.top = pos.top + 'px'
+    anakin.style.left = pos.left + 'px'
     
     let obj = {
       'ArrowDown': ['top', 15], 
@@ -29,8 +20,7 @@ const sith = () => {
         pos[ key[0] ] = pos[ key[0] ] + key[1];
         anakin.style[ key[0] ] = pos[ key[0] ] + 'px';
       }
-    });
-    
+    })
 }
 
 export default sith
